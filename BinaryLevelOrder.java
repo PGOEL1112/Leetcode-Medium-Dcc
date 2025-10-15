@@ -1,10 +1,16 @@
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.tree.TreeNode;
+import java.util.*;
 
 public class BinaryLevelOrder {
-    class Solution {
+    public class TreeNode{
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int val, TreeNode left, TreeNode right){
+            this.val = val;
+            this.left = null;
+            this.right = null;
+        }
+    }
     public int levels(TreeNode root){
         if(root==null) return 0;
         return 1+Math.max(levels(root.left),levels(root.right));
@@ -25,5 +31,13 @@ public class BinaryLevelOrder {
         }
         return ans;
     }
+
+    public static void main(String[] args) {
+        BinaryLevelOrder obj = new BinaryLevelOrder();
+        TreeNode root = obj.new TreeNode(0, null, null);
+        List<List<Integer>> ans = obj.levelOrder(root);
+        System.out.println("The level order traversal of binary tree is :"+ans);
+    }
 }
-}
+
+

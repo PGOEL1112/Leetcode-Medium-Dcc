@@ -11,7 +11,7 @@ public class WildCardMatching {
         //Iniitalizing first colum : means P string is empty
         for (int i = 1; i < n+1; i++) {
             dp[i][0] = false;
-        }
+        } 
 
         // Initializing first row : means S string is empty
         for (int j = 1; j < m+1; j++) {

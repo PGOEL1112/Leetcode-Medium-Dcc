@@ -71,7 +71,7 @@ public class NoOfIslands {
             {'1','1','0','1','0'},
             {'1','1','0','0','0'},
             {'0','0','0','0','0'}
-        };
+        }
 
         NoOfIslands obj = new NoOfIslands();
         int count = obj.numIslands(grid);

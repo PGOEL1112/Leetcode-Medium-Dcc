@@ -14,6 +14,7 @@ public class CountCoveredBuilding {
             minr[y]=Math.min(minr[y],x);
             maxc[x]=Math.max(maxc[x],y);
             minc[x]=Math.min(minc[x],y);
+            // occur
         }
         int ct=0;
         for (int[] p : buildings) {
